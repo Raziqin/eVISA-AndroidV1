@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#676767</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorlistview">#c63737</color>
+    <color name="QRBlack">#000000</color>
+    <color name="QRWhite">#ffffff</color>
 </resources>

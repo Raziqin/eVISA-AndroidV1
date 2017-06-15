@@ -84,5 +84,17 @@
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/wmalaysiamy" />
 
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_signin"
+        android:layout_marginTop="16dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:background="#435c84"
+        android:layout_alignEnd="@+id/bt_signin"
+        android:layout_alignStart="@+id/bt_signin" />
+
 
 </RelativeLayout>

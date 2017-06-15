@@ -33,7 +33,8 @@
         <activity android:name=".application" />
         <activity android:name=".Httphandler" />
         <activity android:name=".JSONParser" />
-        <activity android:name=".appdetail"></activity>
+        <activity android:name=".appdetail" />
+        <activity android:name=".register"></activity>
     </application>
 
 </manifest>

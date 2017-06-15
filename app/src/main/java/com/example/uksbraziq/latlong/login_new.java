@@ -33,6 +33,7 @@ public class login_new extends AppCompatActivity implements View.OnClickListener
     private EditText et_email;
     private EditText et_password;
     private Button bt_signin;
+    private Button bt_register;
 
     private String email;
     private String password;
@@ -43,11 +44,24 @@ public class login_new extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_new);
+
+        bt_register = (Button) findViewById(R.id.bt_register);
         et_email = (EditText) findViewById(R.id.et_email);
         et_password = (EditText) findViewById(R.id.et_password);
         bt_signin = (Button) findViewById(R.id.bt_signin);
+
+
         bt_signin.setOnClickListener(this);
+        bt_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(login_new.this, register.class);
+                startActivity(i);
+            }
+        });
+
     }
+
     private void userLogin() {
         email = et_email.getText().toString().trim();
         password = et_password.getText().toString().trim();

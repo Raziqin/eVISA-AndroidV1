@@ -139,9 +139,12 @@ public class profile extends AppCompatActivity {
         System.out.println("first name >>>> "+ F);
         Bundle bundle = new Bundle();
             //if(bundle != null) {
+
+
                ArrayList<String> ar = new ArrayList<String>();
             for(int i = 0; i<array.length(); i++) {
                 JSONObject obj = null;
+
                 try {
                     obj = array.getJSONObject(i);
 
@@ -159,7 +162,13 @@ public class profile extends AppCompatActivity {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                            AppNoClass(KEY_APPNO);
+                            Log.e("item clicks", "selected: " + position);
+                           // AppNoClass(KEY_APPNO);
+                            Intent r = new Intent(profile.this,appdetail.class);
+                            r.putExtra("appNumber", KEY_APPNO);
+                            System.out.println("R appNumber >>" +KEY_APPNO);
+                            System.out.println("R appNumber 2 >>" +KEY_APPNO);
+                            startActivity(r);
 
 //                            Intent i = new Intent(profile.this, appdetail.class);
 //                            i.putExtra("appNumber", KEY_APPNO);
@@ -174,7 +183,8 @@ public class profile extends AppCompatActivity {
                 }
 
 
-            }}
+            }
+    }
 
         public void AppNoClass(String app){
 

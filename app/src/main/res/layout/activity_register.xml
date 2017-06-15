@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uksbraziq.latlong.register"
+    android:background="@drawable/bg">
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/evisa" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        app:srcCompat="@android:drawable/divider_horizontal_bright"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="REGISTRATION"
+        android:textSize="15dp"
+        android:textColor="#ffffff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/tv_Registration"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_fname_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="First Name :"
+            android:textColor="#fffa00"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            />
+
+            <EditText
+                android:id="@+id/et_fname_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_lname_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_lname_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nationality : "
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/Nationality_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_above="@+id/tv_passport_reg"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="29dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/spinner_design"
+                />
+
+            <TextView
+                android:id="@+id/tv_passport_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Passport Number : "
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_pass_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:hint="EG: G222298788"
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:textColorHint="#878e96" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender : "
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/Male"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Male"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/Female"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Female"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_dob_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/displayDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/pickDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick A date"
+                android:alpha="0.80"
+                android:background="#6b6b6b"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
