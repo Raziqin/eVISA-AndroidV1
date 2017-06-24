@@ -104,7 +104,7 @@
         android:dividerHeight="3dp"
         android:text="   "
         android:layout_gravity="center"
-        android:listSelector="#ffdd00"
+        android:listSelector="#ed5c5e"
         android:gravity="center"
         android:foregroundGravity="center"
         android:textAlignment="center"/>

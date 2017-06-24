@@ -13,14 +13,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Calendar;
+import java.util.List;
 
 public class register extends AppCompatActivity {
 
     // Spinner
 
     private Spinner spin;
-    String[] Nationality = {"Bangladesh" , "Bhutan" , "China" , "India" , "Montenegro" , "Myanmar" ,
+    String[] Nationality = {"Please Choose" , "Bangladesh" , "Bhutan" , "China" , "India" , "Montenegro" , "Myanmar" ,
     "Nepal" , "Pakistan" , "Serbia" , "Sri Lanka"};
+
+    private Spinner spin2;
+    String[] Country = {"Please Choose" , "Malaysia", "China", "Bhutan"  , "India" , "Montenegro" , "Myanmar" ,
+            "Nepal" , "Pakistan" , "Serbia" , "Sri Lanka"};
 
     //Date picker
     private TextView pDisplayDate;
@@ -67,6 +72,7 @@ public class register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         spin =(Spinner) findViewById(R.id.Nationality_spinner);
+        spin2 = (Spinner) findViewById(R.id.country_spinner);
 
         pDisplayDate = (TextView) findViewById(R.id.displayDate);
         pPickDate = (Button) findViewById(R.id.pickDate);
@@ -90,6 +96,10 @@ public class register extends AppCompatActivity {
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //Setting the ArrayAdapter data on the Spinner
         spin.setAdapter(aa);
+
+        ArrayAdapter bb = new ArrayAdapter(this,android.R.layout.simple_spinner_item,Country);
+        bb.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin2.setAdapter(bb);
 
     }
 

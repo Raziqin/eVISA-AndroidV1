@@ -83,6 +83,8 @@ public class login_new extends AppCompatActivity implements View.OnClickListener
                             Toast.makeText(login_new.this, "FAILED", Toast.LENGTH_LONG).show();
                         }
                     }
+                    Intent xy = new Intent(getApplicationContext(),profile.class);
+
         },
                 new Response.ErrorListener() {
                     @Override
@@ -104,7 +106,6 @@ public class login_new extends AppCompatActivity implements View.OnClickListener
         requestQueue.add(stringRequest);
     }
 
-
     private void openProfile(){
         id = KEY_USERID;
 
@@ -114,7 +115,6 @@ public class login_new extends AppCompatActivity implements View.OnClickListener
         System.out.println("User ID is :" + KEY_USERID);
         System.out.println("Email is  "+ KEY_EMAIL);
         startActivity(intent);
-
     }
 
     @Override

@@ -31,7 +31,6 @@
         <activity android:name=".profile" />
         <activity android:name=".listview" />
         <activity android:name=".application" />
-        <activity android:name=".Httphandler" />
         <activity android:name=".JSONParser" />
         <activity android:name=".appdetail" />
         <activity android:name=".register"></activity>

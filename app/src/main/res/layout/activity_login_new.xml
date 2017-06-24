@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.uksbraziq.latlong.login_new">
+    tools:context="com.example.uksbraziq.latlong.login_new"
+    android:background="@drawable/bg">
 
     <ImageView
         android:id="@+id/imageView"
@@ -37,7 +38,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_below="@+id/imageView"
@@ -51,8 +52,11 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:layout_above="@+id/bt_signin"
+        android:textColor="#ffffff"
+        android:textColorHint="#878e96"
         android:layout_alignStart="@+id/et_password"
-        android:layout_marginBottom="50dp" />
+        android:layout_marginBottom="50dp"
+        />
 
     <EditText
         android:id="@+id/et_password"
@@ -61,8 +65,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_below="@+id/imageView"
+        android:textColor="#ffffff"
+        android:textColorHint="#878e96"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp" />
+        android:layout_marginTop="110dp"
+        android:inputType="textPassword"
+        />
 
     <Button
         android:id="@+id/bt_signin"
@@ -72,7 +80,7 @@
         android:textColor="#ffffff"
         android:background="#435c84"
         android:layout_below="@+id/et_password"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="30dp"
         android:layout_alignEnd="@+id/et_password"
         android:layout_alignStart="@+id/et_password" />
 
@@ -95,6 +103,16 @@
         android:background="#435c84"
         android:layout_alignEnd="@+id/bt_signin"
         android:layout_alignStart="@+id/bt_signin" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        android:textStyle="italic"
+        android:clickable="true"
+        android:layout_below="@+id/et_email"
+        android:layout_alignStart="@+id/et_password" />
 
 
 </RelativeLayout>

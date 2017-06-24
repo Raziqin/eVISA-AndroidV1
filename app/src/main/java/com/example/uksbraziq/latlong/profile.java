@@ -197,21 +197,3 @@ public class profile extends AppCompatActivity {
 
     }
         }
-
-
-
-  /*
-                    for (int i = 0; i < array.length(); i++) {
-                        JSONObject obj = array.getJSONObject(i);
-                        obj = array.getJSONObject(i);
-                        data[i] = obj.getString("appFirstName");
-
-                        KEY_APPFNAME = obj.getString("appFirstName");
-                        String appno = obj.getString("appNumber");
-
-                        System.out.println("First Name is " + KEY_APPFNAME);
-                        System.out.println("Application number is >> "+ appno);
-
-                       String fname = KEY_APPFNAME;
-                    }
-                    */

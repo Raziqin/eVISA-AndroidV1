@@ -94,7 +94,7 @@
 
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tv_nationality_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nationality : "
@@ -109,6 +109,7 @@
                 android:layout_height="40dp"
                 android:layout_above="@+id/tv_passport_reg"
                 android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="29dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="10dp"
@@ -138,7 +139,7 @@
                 android:textColorHint="#878e96" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/tv_gender_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Gender : "
@@ -206,6 +207,184 @@
                 android:background="#6b6b6b"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_address_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address : "
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_address_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:textColor="#ffffff"
+                android:textColorHint="#878e96"
+                android:lines="2"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Postcode :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:textColorHint="#878e96"
+                android:lines="2"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_city_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:id="@+id/et_city_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:textColorHint="#878e96"
+                android:lines="2"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/tv_country_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/country_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="29dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/spinner_design"/>
+
+            <TextView
+                android:id="@+id/tv_phone_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_phone_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColor="#ffffff"
+                android:textColorHint="#878e96"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#ffffff"
+                android:textColorHint="#878e96"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_password_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_password_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textColorHint="#878e96"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_confirmpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Re-confirm Password :"
+                android:textColor="#fffa00"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/et_repassword_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textColorHint="#878e96"
+                android:layout_marginLeft="5dp"/>
+
+            <Button
+                android:id="@+id/bt_Register_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="40dp"
+                android:background="#0f5edd"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+
 
         </LinearLayout>
     </ScrollView>
