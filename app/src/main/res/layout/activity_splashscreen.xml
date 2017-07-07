@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,14 +8,24 @@
     tools:context="com.example.uksbraziq.latlong.splashscreen">
 
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/klcc_splash_screen_1"
+        android:alpha=".50"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0"
+        android:scaleType="fitXY"
+       />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is Splash Screen"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="266dp"
-        android:textSize="30dp"
-        android:textColor="#000000"
-        android:textStyle="bold"/>
-</android.support.constraint.ConstraintLayout>
+        android:alpha=".90"
+        app:srcCompat="@drawable/evisa"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

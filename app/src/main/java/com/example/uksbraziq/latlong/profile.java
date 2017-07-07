@@ -83,7 +83,7 @@ public class profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        textView = (TextView) findViewById(R.id.tag);
+        textView = (TextView) findViewById(R.id.hifname);
         listView = (ListView) findViewById(R.id.list_item);
         id = getIntent().getStringExtra(String.valueOf(login_new.KEY_USERID));
 
@@ -149,6 +149,8 @@ public class profile extends AppCompatActivity {
                     obj = array.getJSONObject(i);
 
                     System.out.println("GETEXTRA " + intent.getStringExtra(KEY_APPFNAME));
+                    System.out.println("buNBDLER" + bundle);
+
                     ar.add(obj.getString("appFirstName") + " " + obj.getString("appLastName") + " - " + obj.getString("appNumber"));
                     System.out.println("Show ListView appNumber is " + bundle.getString("appNumber"));
                     System.out.println("fname is " + obj.getString("appFirstName"));
@@ -156,7 +158,12 @@ public class profile extends AppCompatActivity {
                     ListView myLV = (ListView) findViewById(R.id.list_item);
                     myLV.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, ar));
 
+             //       textView.setText(obj.getString("appFirstName"));
+                    System.out.println("the First Name " + obj.getString("appFirstName"));
+
+
                     final String KEY_APPNO = obj.getString("appNumber");
+
 
                     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
